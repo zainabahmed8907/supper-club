@@ -1,0 +1,18 @@
+.partners_carousel {
+  background-color: #f9fafa;
+}
+
+.wrapper {
+  display: flex;
+  animation: 25s linear 1s infinite moveCarousel;
+  width: calc(70px * 14);
+}
+
+@keyframes moveCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-70px * 7));
+  }
+}

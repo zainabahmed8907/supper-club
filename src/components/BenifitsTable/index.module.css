@@ -1,0 +1,38 @@
+.tableWrapper {
+    overflow-x: auto;
+}
+.tableWrapper .scrollable {
+    overflow-x: auto;
+}
+
+/* Table styles */
+.tableWrapper table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableWrapper th,.tableWrapper td {
+    padding: 8px;
+    border: none;
+    text-align: left;
+}
+
+/* Fix the first column */
+@media (max-width:1024px){
+    .tableWrapper {
+        margin-bottom: 20px !important;
+    }
+    .tableWrapper table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-inline:20px !important;
+        font-size:15px;
+    }
+    .tableWrapper th:first-child,
+    .tableWrapper td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        background-color: #fff; /* Ensure background color remains white */
+    }
+}

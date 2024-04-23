@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg {
+    @apply inline-flex;
+  }
+
+  .sticky .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+
+  input#togglePlan:checked ~ .dot {
+    @apply translate-x-full;
+  }
+
+  input#checkboxLabel:checked ~ .box span {
+    @apply opacity-100;
+  }
+}
+.offers_slider .slick-slide:first-child::after {
+  opacity: .4;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1199px) {
+  .sp-bg-image {
+    background-position: center;
+  }
+}
+
+.auth-social-btn.MuiButton-contained {
+  border-radius: 50%;
+  padding: 10px;
+  min-width: 46px;
+  height: 46px;
+  background: #d9d9d90d;
+}
+.sp-login-form .MuiInputBase-root {
+  padding-bottom: 8px;
+}
+.sp-login-form .MuiInputBase-root::before {
+  border-bottom: 1px solid #dadada;
+}
+.sp-login-form .MuiInputBase-root {
+  color: #fff;
+}
+.sp-login-form.MuiInput-input::placeholder {
+  color: #7e7e7e;
+}
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Gray-text-G-80, #ddd);
+  border-radius: 20px;
+}
+.offers_slider .slick-arrow,
+.members_slider .slick-arrow {
+  margin-top: 280px !important;
+  margin-left: 85% !important;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.restaurants_carousel .slick-arrow {
+  margin-top: 130px !important;
+  margin-left: 85% !important;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 960px) {
+  .offers_slider .slick-arrow {
+    margin-top: 215px !important;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .offers_slider .slick-arrow {
+    margin-top: 290px !important;
+  }
+  .members_slider .slick-arrow {
+    margin-top: 290px !important;
+  }
+  .restaurants_carousel .slick-arrow {
+    margin-top: 240px !important;
+  }
+  .offers_slider .slick-next::before,
+  .members_slider .slick-next::before,
+  .restaurants_carousel .slick-next::before {
+    line-height: 0.5 !important;
+  }
+}
+@media screen and (min-width: 1520px) {
+  .offers_slider .slick-arrow {
+    margin-top: 17rem !important;
+  }
+}
+@media screen and (min-width: 1820px) {
+  .offers_slider .slick-arrow {
+    margin-top: 18rem !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .offers_slider .slick-arrow,
+  .members_slider .slick-arrow,
+  .restaurants_carousel .slick-arrow {
+    margin-left: 72% !important;
+  }
+  .offers_slider .slick-next::before,
+  .members_slider .slick-next::before,
+  .restaurants_carousel .slick-next::before {
+    line-height: 0.5 !important;
+  }
+}
+.offers_slider .slick-prev,
+.members_slider .slick-prev,
+.restaurants_carousel .slick-prev {
+  background-color: white !important;
+  width: 40px;
+  height: 40px;
+}
+
+.offers_slider .slick-prev::before,
+.members_slider .slick-prev::before,
+.restaurants_carousel .slick-prev::before {
+  content: url("../../public/images/prev.png") !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  line-height: 0.5 !important;
+}
+.offers_slider .slick-next,
+.members_slider .slick-next,
+.restaurants_carousel .slick-next {
+  background-color: white !important;
+  right: unset !important;
+  left: 35px !important;
+  width: 40px;
+  height: 40px;
+}
+.offers_slider .slick-next::before,
+.members_slider .slick-next::before,
+.restaurants_carousel .slick-next::before {
+  content: url("../../public/images/next.png") !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  line-height: 0.5 !important;
+}
+
+
+.offer_details_thumbnailSliderWwrap__oyKly .slick-slider .slick-prev::before {
+  content: url("../../public/images/offerDetails/arrow-left.png") !important;
+
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  line-height: 0.5 !important;
+  position: absolute;
+  left: -3rem;
+  top: -0.5rem;
+}
+.offer_details_thumbnailSliderWwrap__oyKly .slick-slider .slick-next::before {
+  content: url("../../public/images/offerDetails/arrow-right.png") !important;
+
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  line-height: 0.5 !important;
+  position: absolute;
+  left: 2rem;
+  top: -0.5rem;
+}
+.MuiAccordion-root {
+  box-shadow: none !important;
+}
+.MuiAccordion-root::before {
+  background-color: transparent !important;
+}
+
+/* .offerdetailsCarousel .slick-prev{
+  margin-left: 1rem;
+} */
+@media (max-width:620px){
+  .offerdetailsCarousel .slick-prev{
+    margin-left: 1.5rem;
+  }
+}
+.offerdetailsCarousel .slick-prev::before{
+
+  content: url("../../public/images/offers&discounts/prev.svg") !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  line-height: 0.5 !important;  
+}
+.offerdetailsCarousel .slick-next{
+  margin-right: 1.5rem;
+}
+@media (max-width:620px){
+  .offerdetailsCarousel .slick-next{
+    margin-right: 1.5rem;
+  }
+}
+.offerdetailsCarousel .slick-next::before{
+
+  content: url("../../public/images/offers&discounts/next.svg") !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  line-height: 0.5 !important;
+}
+.offers_carousel .slick-list{
+  max-width: 55rem !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.PhoneInputInput{
+  outline:none !important;
+  background: #F9FAFA;
+}
+
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image-container img {
+  width: 100%;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 50px; 
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-thumbnail {
+  border: 2px solid blue; 
+}
+
+.fullImgSlider .slick-prev{
+  position: absolute;
+  z-index: 50;
+  left: 3rem !important;
+  ;
+}
+.fullImgSlider .slick-next{
+  position: absolute;
+  z-index: 50;
+  right: 4rem !important;
+  
+}
+.fullImgSlider .slick-prev::before{
+  content: url("../../public/images/offerDetails/maximize-prev.svg");
+}
+.fullImgSlider .slick-next::before{
+  content: url("../../public/images/offerDetails/maximize-next.svg");
+}
+#subscribe{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+#privacy-policy u {
+  color: #C39D63;
+}
+#backdrop-filter-active{
+  background: #ffd83c;
+  filter: blur(3px);
+
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button:hover::after,
+input[type="number"]::-webkit-inner-spin-button:hover::after {
+  border-top-color: #999; /* Hover color */
+}
+.unsaved{
+  display: none;
+}
+.offerCard:hover .unsaved{
+   display: block;
+}
+

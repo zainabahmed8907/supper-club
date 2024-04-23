@@ -1,0 +1,27 @@
+.thumbnailSliderWwrap {
+  height: 100%;
+  background-color: #000000;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+.thumbnailSliderWwrap .slick-track .slick-slide {
+  text-align: center;
+}
+
+.slickSliderImg {
+  width: 27rem;
+  height: 10rem;
+}
+.slickSlide{
+  padding-right: 10px !important;
+}
+
+.offer_details_thumbnailSliderWwrap__oyKly .slick-slider .slick-prev {
+  background-color: red !important;
+
+}
+
